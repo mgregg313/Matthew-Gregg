@@ -51,10 +51,21 @@
   <Body>
 
 
-<p> test a3 </p>
+<p> test a4 </p>
     
   </Body>
 
+<script>
+  // Hash-based navigation logic
+  function updateContent() {
+    const hash = location.hash || '#home'; // Default to home
+    document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
+    const activeContent = document.querySelector(hash);
+    if (activeContent) activeContent.classList.add('active');
+  }
 
+  window.addEventListener('hashchange', updateContent);
+  window.addEventListener('load', updateContent);
+</script>
   
 </HTML>
