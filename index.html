@@ -36,16 +36,6 @@
       background-color: #04AA6D;
       color: white;
     }
-
-    /* Hide inactive content sections */
-    .content {
-      display: none;
-    }
-
-    /* Show active content */
-    .content.active {
-      display: block;
-    }
     
   </style>
   
@@ -56,46 +46,19 @@
 <Body>
     
   <div class="topnav">
-    <a class="active" href="#home">Home</a>
+    <a class="active" href="index.html">Home</a>
     <a href="#news">News</a>
     <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <a href="about.html">About</a>
   </div>
 
-   <div id="home" class="content active">
-    <h1>Welcome to the Home Page</h1>
-    <p>Test content for Home.</p>
-  </div>
-  <div id="news" class="content">
-    <h1>News Section</h1>
-    <p>Latest news and updates.</p>
-  </div>
-  <div id="contact" class="content">
-    <h1>Contact Us</h1>
-    <p>Contact information goes here.</p>
-  </div>
-  <div id="about" class="content">
-    <h1>About Us</h1>
-    <p>Details about this project and its founder.</p>
-  </div>
-
-  <script>
-  // Hash-based navigation logic
-  function updateContent() {
-    const hash = location.hash || '#home'; // Default to home
-    document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
-    const activeContent = document.querySelector(hash);
-    if (activeContent) activeContent.classList.add('active');
-  }
-
-  window.addEventListener('hashchange', updateContent);
-  window.addEventListener('load', updateContent);
-</script>
+  <h1>Welcome to my Home Page</h1>
+  
   
   
 
 
-<p> test a5 </p>
+<p> test a6 </p>
     
 </Body>
 
